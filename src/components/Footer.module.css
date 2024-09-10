@@ -1,0 +1,29 @@
+/* src/components/Footer.module.css */
+.footer {
+    background-color: #20232a;
+    padding: 10px 20px;
+    text-align: center;
+    color: #61dafb;
+  }
+  
+  .navList {
+    list-style: none;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .navList li {
+    display: inline;
+    margin: 0 10px;
+  }
+  
+  .link {
+    color: #61dafb;
+    text-decoration: none;
+  }
+  
+  .link:hover {
+    color: white;
+  }
+  

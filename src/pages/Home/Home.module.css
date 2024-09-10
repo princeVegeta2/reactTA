@@ -1,0 +1,62 @@
+/* src/pages/Home.module.css */
+
+.container {
+  text-align: center;
+  margin-top: 50px;
+  font-family: Arial, sans-serif;
+}
+
+.title {
+  font-size: 2rem;
+  color: #282c34;
+}
+
+.userTable {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+}
+
+.userTable th,
+.userTable td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+}
+
+.userTable th {
+  background-color: #282c34;
+  color: #61dafb;
+  position: relative;
+}
+
+.userTable tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.userTable tr:hover {
+  background-color: #ddd;
+}
+
+.userTable td {
+  color: #333;
+}
+
+/* Styling for the search icon */
+.searchIcon {
+  width: 16px;
+  height: 16px;
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+/* Styling for the search input field */
+.searchInput {
+  display: block;
+  margin-top: 5px;
+  width: 90%;
+  padding: 5px;
+  font-size: 0.9rem;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}

@@ -1,46 +1,41 @@
-# Getting Started with Create React App
+# Overview
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was created to solve a Technical Assignment to demonstrate my utilization of React + Redux Tools + TypeScript + API skills.
 
-## Available Scripts
+## Prerequisites
+- React `^18.3.1`
+- React Router Dom `^6.26.2`
+- Axios `^1.7.7`
+- Typescript `^4.9.5`
+- ReduxJS Toolkit `^2.2.7`
 
-In the project directory, you can run:
+# Project 
 
-### `npm start`
+## Frontend
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Reusables
+The frontend has reusable components: `Footer.tsx` and `Header.tsx` which can be reused on any page.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Pages
+- `Home.tsx`. This is the main page which shows the table, implements the dynamic search functionality using states and uses Redux to fetch and display all users in the Table.
 
-### `npm test`
+## Backend
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### API
+- The backend uses `JSONPlaceholder` API in the `src/services/api.ts` file. It fetches a total of 10 users which is then forwarded to our Redux slice.
 
-### `npm run build`
+## Redux 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Store
+Our `store.ts` script in `/src/app/store.ts` directory is our primary Redux store. It configures the Users and dispatches necessary states caught by our hook.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### User slice
+- `userSlice.ts` in `/src/features/users/userSlice.ts` directory is used to give shape to the Users data we fetch asynchronously via our API. It then creates and exports a slice which is used in `/src/app/store.ts`.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Hooks
 
-### `npm run eject`
+We have a hook which we are using in `Home.tsx`. It is responsible for exporting typed versions of `useDispatch` and `useSelector` Redux `store.ts`.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+# Conclusion
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+The project was completed on Sept 10 2024. No licenses are applied.

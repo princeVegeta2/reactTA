@@ -1,0 +1,27 @@
+/* src/components/Header.module.css */
+.header {
+    background-color: #282c34; /* React logo background color */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+  }
+  
+  .navList {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  .link {
+    color: #61dafb; /* React logo blue color */
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .link:hover {
+    color: white; /* White hover effect */
+  }
+  
