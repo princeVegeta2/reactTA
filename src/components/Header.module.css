@@ -1,9 +1,9 @@
 /* src/components/Header.module.css */
 .header {
-    background-color: #282c34; /* React logo background color */
+    background-color: #282c34; 
     padding: 10px 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     color: white;
   }
@@ -13,15 +13,16 @@
     display: flex;
     gap: 20px;
     align-items: center;
+    margin-left: auto; 
   }
   
   .link {
-    color: #61dafb; /* React logo blue color */
+    color: #61dafb; 
     text-decoration: none;
     font-weight: bold;
   }
   
   .link:hover {
-    color: white; /* White hover effect */
+    color: white; 
   }
   
