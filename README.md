@@ -2,6 +2,9 @@
 
 This project was created to solve a Technical Assignment to demonstrate my utilization of React + Redux Tools + TypeScript + API skills.
 
+[Live demo](https://bespoke-nougat-9ebfc9.netlify.app/)
+
+
 ## Prerequisites
 - React `^18.3.1`
 - React Router Dom `^6.26.2`
